@@ -1,0 +1,512 @@
+3
+solzreed peninsula
+solzreed braised meat
+specialty
+true
+25
+trimmed meat
+20
+Egg
+solzreed dried food
+specialty
+false
+30
+trimmed meat
+30
+grape
+solzreed strawberry smoothies
+fellowship
+false
+60
+ground spices
+100
+strawberry
+3
+gweonid forest
+gweonid dyed feathers
+specialty
+true
+20
+orchard puree
+15
+goose down
+gweonid apple pies
+specialty
+false
+50
+chopped produce
+30
+apple
+gweond piquant spices
+fellowship
+false
+70
+medicinal powder
+190
+onion
+3
+lilyhut hills
+lilyhut hills milk soap
+specialty
+true
+70
+ground spices
+35
+milk
+lilyhut cooking oil
+specialty
+false
+50
+dried flowers
+20
+olive
+lilyhut hills barley moonshine
+fellowship
+false
+15
+orchard puree
+12
+ginkgo leaf
+3
+dewstone plains
+dewstone fine thread
+specialty
+true
+70
+ground grain
+40
+goat wool
+dewstone distilled liquor
+specialty
+false
+100
+medicinal powder
+190
+narcissus
+dewstone toy robots
+fellowship
+false
+15
+orchard puree
+12
+ginkgo leaf
+
+3
+white arden
+white arden trail mix
+specialty
+true
+70
+chopped produce
+30
+milk
+white arden figgy pudding
+specialty
+false
+50
+ground grain
+60
+fig
+white arden grilled meat
+fellowship
+false
+30
+trimmed meat
+30
+pumpkin
+
+3
+marianople
+marianople duck down
+specialty
+true
+70
+dried flowers
+40
+duck down
+marianople sweeteners
+specialty
+false
+50
+ground spices
+12 cherry
+marianople face cream
+fellowship
+false
+100
+chopped produce
+160
+iris
+
+3
+two crowns
+two crowns cream
+specialty
+true
+80
+medicinal powder
+35
+milk
+two crowns pomme cakes
+specialty
+false
+50
+ground grain
+15
+pomegranate
+two crowns flowerpots
+fellowship
+false
+80
+dried flowers
+180
+lavender
+
+3
+cinderstone moor
+cinderstone tart mead
+specialty
+true
+55
+dried flowers
+20
+lemon
+cinderstone sacred candles
+specialty
+false
+75
+ground spices
+55
+bay leaf
+cinderstone medicinal powder
+fellowship
+70
+medicinal powder
+190
+azalea
+
+3
+halcyona
+halcyona wheat biscuit
+specialty
+true
+70
+ground grain
+35
+egg
+halcyona yam pasta
+specialty
+false
+90
+dried flowers
+130
+yam
+halcyona livestone feed
+fellowship
+false
+80
+chopped produce
+90
+barley
+
+3
+hellswamp
+hellswamp spicy meat
+specialty
+true
+15
+trimmed meat
+10
+banana
+hellswamp mushroom pot pies
+specialty
+false
+30
+orchard puree
+80
+mushroom
+hellswamp fried cucumbers
+fellowship
+false
+100
+ground spices
+80
+peanut
+
+3
+sanddeep
+sanddeep medicinal poultice
+specialty
+true
+40
+medicinal powder
+45
+avocado
+sanddeep preserved meat
+specialty
+false
+30
+trimmed meat
+75
+rosemary
+sanddeep fired cucumbers
+fellowship
+false
+60
+ground grain
+200
+cucumber
+
+3
+arcum iris
+arcum iris roasted eggs
+specialty
+true
+60
+ground spices
+40
+egg
+arcum iris lavaspice
+specialty
+false
+80
+dried flowers
+90
+turmeric
+arcum iris salt crackers
+fellowship
+false
+50
+ground grain
+70
+sunflower
+
+3
+falcorth plains
+falcorth snowlion yarn
+specialty
+true
+60
+medicinal powder
+40
+goose down
+falcorth apple tarts
+specialty
+false
+100
+ground grain
+25
+apple
+falcorth plains fertilizer
+fellowship
+false
+80
+dried flowers
+15
+carrot
+
+3
+tigerspine mountains
+tigerspine tigerspaw pancakes
+specialty
+true
+70
+ground grain
+30
+milk
+tigerspine grape jam
+specialty
+false
+50
+chopped produce
+60
+grape
+tigerspine seasoned meat
+fellowship
+false
+30
+trimmed meat
+30
+tomato
+
+3
+mahadevi
+mahadevi elephant cookies
+specialty
+true
+50
+chopped produce
+15
+banana
+mahadevi root herbs
+specialty
+false
+25
+orchard puree
+25
+bay leaf
+mahadevi pickles
+fellowship
+false
+60
+ground spices
+20
+cucumber
+
+3
+solis headlands
+solis alchemy oil
+specialty
+true
+80
+medicinal poweder
+25
+yata fur
+solis juice concentrate
+specialty
+false
+50
+medicinal powder
+15
+jujube
+solis red spice
+fellowship
+false
+110
+ground grain
+30
+saffrons
+
+3
+villanelle
+villanelle potpourri
+specialty
+true
+70
+dried flowers
+40
+goat wool
+villanelle preserved cherries
+specialty
+false
+50
+dried flowers
+12
+cherry
+villanelle long noodles
+fellowship
+false
+80
+chopped produce
+180
+rice
+
+3
+silent forest
+silent forest dried fruit
+specialty
+true
+20
+orchard puree
+15
+milk
+silent forest pomme candy
+specialty
+false
+50
+ground spices
+15
+pomegranate
+silent forest seasonings
+fellowship
+false
+60
+medicinal powder
+100
+garlic
+
+3
+ynystere
+ynystere preserves
+specialty
+true
+55
+chopped produce
+10
+orange
+ynystere olive oil
+specialty
+false
+50
+ground spices
+20
+olive
+ynystere bouquets
+fellowship
+false
+60
+ground grain
+200
+rose
+
+3
+rookborne basin
+rookborne basin biscuit sticks
+specialty
+true
+20
+orchard puree
+15
+milk
+rookborne basin fuit leather
+specialty
+false
+50
+chopped produce
+60
+fig
+rookbrone basin corn hash
+fellowship
+false
+80
+dried flowers
+180
+corn
+
+3
+windscour savannah
+windscour hearty jerky
+specialty
+true
+15
+trimmed meat
+windscour bitter herbs
+specialty
+false
+windscour chilled beverages
+fellowship
+false
+
+3
+pernioor ruins
+pernioor aged spices
+specialty
+true
+pernioor potato powder
+specialty
+false
+pernioor fried meat
+fellowship
+false
+
+3
+hasla
+hasla softened fabric
+specialty
+true
+hasla cured meat
+specialty
+false
+hasla speicalty tea
+fellowship
+false
