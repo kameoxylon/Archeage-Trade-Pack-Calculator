@@ -53,6 +53,7 @@ public class AATradePackCalculator
 
 		while(info.hasNext())
 		{
+
 			Integer totalPacks = info.nextInt();
 			buffer = info.nextLine();
 			String regionName = info.nextLine();
@@ -80,7 +81,9 @@ public class AATradePackCalculator
 
 				packs.put(pack.packName, pack);
 			}
-		}	
+		}
+
+		System.out.println("What would you like to do? [1] Cheapest pack, [2] How much a pack will cost")
 
 	}
 }

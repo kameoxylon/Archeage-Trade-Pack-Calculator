@@ -90,7 +90,6 @@ false
 orchard puree
 12
 ginkgo leaf
-
 3
 white arden
 white arden trail mix
@@ -114,7 +113,6 @@ false
 trimmed meat
 30
 pumpkin
-
 3
 marianople
 marianople duck down
@@ -129,7 +127,8 @@ specialty
 false
 50
 ground spices
-12 cherry
+12
+cherry
 marianople face cream
 fellowship
 false
@@ -137,7 +136,6 @@ false
 chopped produce
 160
 iris
-
 3
 two crowns
 two crowns cream
@@ -161,7 +159,6 @@ false
 dried flowers
 180
 lavender
-
 3
 cinderstone moor
 cinderstone tart mead
@@ -180,11 +177,11 @@ ground spices
 bay leaf
 cinderstone medicinal powder
 fellowship
+false
 70
 medicinal powder
 190
 azalea
-
 3
 halcyona
 halcyona wheat biscuit
@@ -208,7 +205,6 @@ false
 chopped produce
 90
 barley
-
 3
 hellswamp
 hellswamp spicy meat
@@ -232,7 +228,6 @@ false
 ground spices
 80
 peanut
-
 3
 sanddeep
 sanddeep medicinal poultice
@@ -256,7 +251,6 @@ false
 ground grain
 200
 cucumber
-
 3
 arcum iris
 arcum iris roasted eggs
@@ -280,7 +274,6 @@ false
 ground grain
 70
 sunflower
-
 3
 falcorth plains
 falcorth snowlion yarn
@@ -304,7 +297,6 @@ false
 dried flowers
 15
 carrot
-
 3
 tigerspine mountains
 tigerspine tigerspaw pancakes
@@ -328,7 +320,6 @@ false
 trimmed meat
 30
 tomato
-
 3
 mahadevi
 mahadevi elephant cookies
@@ -352,7 +343,6 @@ false
 ground spices
 20
 cucumber
-
 3
 solis headlands
 solis alchemy oil
@@ -376,7 +366,6 @@ false
 ground grain
 30
 saffrons
-
 3
 villanelle
 villanelle potpourri
@@ -400,7 +389,6 @@ false
 chopped produce
 180
 rice
-
 3
 silent forest
 silent forest dried fruit
@@ -424,7 +412,6 @@ false
 medicinal powder
 100
 garlic
-
 3
 ynystere
 ynystere preserves
@@ -448,7 +435,6 @@ false
 ground grain
 200
 rose
-
 3
 rookborne basin
 rookborne basin biscuit sticks
@@ -472,7 +458,6 @@ false
 dried flowers
 180
 corn
-
 3
 windscour savannah
 windscour hearty jerky
@@ -480,33 +465,65 @@ specialty
 true
 15
 trimmed meat
+7
+moringa berry
 windscour bitter herbs
 specialty
 false
+100
+medicinal powder
+125
+mint
 windscour chilled beverages
 fellowship
 false
-
+180
+chopped produce
+40
+aloe
 3
 pernioor ruins
 pernioor aged spices
 specialty
 true
+50
+ground spices
+40
+avocado
 pernioor potato powder
 specialty
 false
+30
+orchard puree
+85
+potato
 pernioor fried meat
 fellowship
 false
-
+30
+trimmed meat
+30
+peanut
 3
 hasla
 hasla softened fabric
 specialty
 true
+50
+medicinal powder
+40
+duck down
 hasla cured meat
 specialty
 false
+30
+trimmed meat
+75
+lily
 hasla speicalty tea
 fellowship
 false
+20
+orchard puree
+40
+cornflower
