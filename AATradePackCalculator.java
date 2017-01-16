@@ -27,11 +27,13 @@ class Pack
 		return gildaStar;
 	}
 
+	//0 = Price, 1 = Name
 	public String getMaterial1(int i)
 	{
 		return material1.get(i);
 	}
 
+	//0 = Price, 1 = Name
 	public String getMaterial2(int i)
 	{
 		return material2.get(i);
@@ -77,9 +79,11 @@ public class AATradePackCalculator
 				pack.material1.addLast(buffer);
 				materialNamesPrices.put(buffer, 0);
 
+				//Quantity
 				buffer = info.nextLine();
 				pack.material2.addFirst(buffer);
 
+				//Name
 				buffer = info.nextLine();
 				pack.material2.addLast(buffer);
 				materialNamesPrices.put(buffer, 0);
@@ -91,6 +95,7 @@ public class AATradePackCalculator
 
 		//iterate through hashset and add prices to each corresponding
 
+		System.out.println(packs.get("tigerspine seasoned meat").getMaterial1(0));
 
 
 		System.out.println("What would you like to do? [1] Cheapest pack, [2] How much a pack will cost");
@@ -105,18 +110,31 @@ public class AATradePackCalculator
 
 			System.out.println();
 			System.out.println("What is the price for...");
-			for (String key : materialNamesPrices.keySet())
+			for (String matName : materialNamesPrices.keySet())
 			{
-				System.out.print(key + ": ");
+				System.out.print(matName + ": ");
 				input = userInput.nextInt();
-				materialNamesPrices.put(key, input);
-
+				materialNamesPrices.put(matName, input);
 			}
-
-			for (int i = 0; i < 10; i++)
+			
+			System.out.println();
+			int lowestPrice = 99999999;
+			String lowestPackName = " ";
+			for (String packName : packs.keySet())
 			{
-				//System.out.print("Input " +  + " price: ");				
+				int price = packPrice(packs.get(packName), materialNamesPrices);
+				System.out.println(packName + ": " + price);
+
+				if (price < lowestPrice)
+				{
+					lowestPrice = price;
+					lowestPackName = packName;
+				}
 			}
+
+			System.out.println();
+			System.out.println("Lowest pack is: " + lowestPackName + " -> " + lowestPrice);
+			
 		}
 		else if (input == 2)
 		{
@@ -129,6 +147,19 @@ public class AATradePackCalculator
 			System.out.println("Choice not found. Please pick from one of the choices listed above.");
 		}
 
+	}
+
+	public static int packPrice (Pack pack, HashMap materialPrices){
+	
+		String mat1Amt = pack.getMaterial1(0);
+		String mat2Amt = pack.getMaterial2(0);
+
+		String material1 = pack.getMaterial1(1);
+		String material2 = pack.getMaterial2(1);
+
+		int total = Integer.parseInt(mat1Amt) * (int)materialPrices.get(material1) + Integer.parseInt(mat2Amt) * (int)materialPrices.get(material2);
+		return total;
+		
 	}
 
 }
