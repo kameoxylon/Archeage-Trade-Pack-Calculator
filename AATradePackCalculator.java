@@ -49,7 +49,7 @@ public class AATradePackCalculator
 	{
 		HashMap<String, Pack> packs = new HashMap<String, Pack>();
 		HashMap<String, Integer> regions = new HashMap<String, Integer>();
-		HashMap<String, Integer> materialNamesPrices = new HashMap<String, Integer>();
+		HashMap<String, Integer> materialPrices = new HashMap<String, Integer>();
 		String buffer;
 
 		Scanner info = new Scanner(new File("tradepackinfo.txt"));
@@ -77,7 +77,7 @@ public class AATradePackCalculator
 				//Name
 				buffer = info.nextLine();
 				pack.material1.addLast(buffer);
-				materialNamesPrices.put(buffer, 0);
+				materialPrices.put(buffer, 0);
 
 				//Quantity
 				buffer = info.nextLine();
@@ -86,16 +86,11 @@ public class AATradePackCalculator
 				//Name
 				buffer = info.nextLine();
 				pack.material2.addLast(buffer);
-				materialNamesPrices.put(buffer, 0);
-
+				materialPrices.put(buffer, 0);
 
 				packs.put(pack.packName, pack);
 			}
 		}
-
-		//iterate through hashset and add prices to each corresponding
-
-		System.out.println(packs.get("tigerspine seasoned meat").getMaterial1(0));
 
 
 		System.out.println("What would you like to do? [1] Cheapest pack, [2] How much a pack will cost");
@@ -110,30 +105,20 @@ public class AATradePackCalculator
 
 			System.out.println();
 			System.out.println("What is the price for...");
-			for (String matName : materialNamesPrices.keySet())
+			for (String matName : materialPrices.keySet())
 			{
 				System.out.print(matName + ": ");
 				input = userInput.nextInt();
-				materialNamesPrices.put(matName, input);
+				materialPrices.put(matName, input);
 			}
 			
+			TreeMap<String, Integer> pricedPacks = new TreeMap<String, Integer>();			
 			System.out.println();
-			int lowestPrice = 99999999;
-			String lowestPackName = " ";
-			for (String packName : packs.keySet())
-			{
-				int price = packPrice(packs.get(packName), materialNamesPrices);
-				System.out.println(packName + ": " + price);
-
-				if (price < lowestPrice)
-				{
-					lowestPrice = price;
-					lowestPackName = packName;
-				}
-			}
+			pricedPacks = sortedPricedPacks(packs, materialPrices);
+			
+			printedSortedPack(pricedPacks);
 
 			System.out.println();
-			System.out.println("Lowest pack is: " + lowestPackName + " -> " + lowestPrice);
 			
 		}
 		else if (input == 2)
@@ -149,7 +134,42 @@ public class AATradePackCalculator
 
 	}
 
-	public static int packPrice (Pack pack, HashMap materialPrices){
+	public static TreeMap<String, Integer> sortedPricedPacks (HashMap<String, Pack> packs, HashMap<String, Integer> materialPrices)
+	{
+		int lowestPrice = 99999999;
+		String lowestPackName = " ";
+		TreeMap<String, Integer> pricedPacks = new TreeMap<String, Integer>();
+
+		for (String packName : packs.keySet())
+		{
+			int price = packPrice(packs.get(packName), materialPrices);
+			pricedPacks.put(packName, new Integer(price));
+
+			if (price < lowestPrice)
+			{
+				lowestPrice = price;
+				lowestPackName = packName;
+			}
+		}
+
+		System.out.println("Lowest Pack is: " + lowestPackName + " - " + lowestPrice);
+		System.out.println();
+
+		return pricedPacks;
+	}
+
+	public static void printedSortedPack (TreeMap<String, Integer> pack)
+	{
+		Set set = pack.entrySet();
+		Iterator i = set.iterator();
+			while (i.hasNext())
+			{
+				Map.Entry me = (Map.Entry)i.next();
+				System.out.println(me.getKey() + ": " + me.getValue());
+			}
+	}
+
+	public static int packPrice (Pack pack, HashMap<String, Integer> materialPrices){
 	
 		String mat1Amt = pack.getMaterial1(0);
 		String mat2Amt = pack.getMaterial2(0);

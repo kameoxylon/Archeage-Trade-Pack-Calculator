@@ -37,7 +37,7 @@ false
 chopped produce
 30
 apple
-gweond piquant spices
+gweonid piquant spices
 fellowship
 false
 70
