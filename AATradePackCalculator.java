@@ -112,19 +112,34 @@ public class AATradePackCalculator
 				materialPrices.put(matName, input);
 			}
 			
-			TreeMap<String, Integer> pricedPacks = new TreeMap<String, Integer>();			
 			System.out.println();
+
+			TreeMap<String, Integer> pricedPacks = new TreeMap<String, Integer>();			
 			pricedPacks = sortedPricedPacks(packs, materialPrices);
-			
 			printedSortedPack(pricedPacks);
 
 			System.out.println();
-			
 		}
 		else if (input == 2)
 		{
-			System.out.println("Please input the current price for each item.");
-			System.out.println("(ex. 2g 0s 30c = 20030, 0g 20s 0c = 2000, 1g 0s 0c = 10000");
+			System.out.println("What region are you looking for? (Please input entire region name) [1] to exit");
+
+			Scanner in = new Scanner(System.in);
+			while (in != 1)
+			{
+				in = in.toLowerCase();
+				if (regions.containsKey(in))
+				{
+					System.out.println("Please input the current price for each item.");
+					System.out.println("(ex. 2g 0s 30c = 20030, 0g 20s 0c = 2000, 1g 0s 0c = 10000");
+
+					
+				}
+				else
+				{
+					System.out.println("No such region exists. Please try again.");
+				}
+			}
 
 		}
 		else
